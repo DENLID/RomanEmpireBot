@@ -118,6 +118,8 @@ async def passport(inter, member: disnake.Member):
 
     await inter.send(file=disnake.File(fp='passport.png'), ephemeral=True)
 
-
+@bot.slash_command()
+async def pay(inter, member: disnake.Member):
+    pass
 
 bot.run(config.token)
