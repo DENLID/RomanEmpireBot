@@ -107,8 +107,8 @@ async def passport(inter, member: disnake.Member):
     headline = ImageFont.truetype('/home/container/RomanEmpireBot/arial.ttf', size=20)
     underline = ImageFont.truetype('/home/container/RomanEmpireBot/arial.ttf', size=12)
 
-    idraw.text((145,15), name, font=headline)
-    idraw.text((145,50), f'ID: {id}', font=underline)
+    idraw.text((145,15), name)
+    idraw.text((145,50), f'ID: {id}')
     idraw.text((145,75), f'Дата рождения: {birthdate.day}.{birthdate.month}.{birthdate.year}', font=underline)
 
     if role in member.roles:
