@@ -109,7 +109,7 @@ async def passport(inter, member: disnake.Member):
 
     idraw.text((145,15), name)
     idraw.text((145,50), f'ID: {id}')
-    idraw.text((145,75), f'Дата рождения: {birthdate.day}.{birthdate.month}.{birthdate.year}', font=underline)
+    idraw.text((145,75), f'Дата рождения: {birthdate.day}.{birthdate.month}.{birthdate.year}')
 
     if role in member.roles:
         img.paste(stamp, (330, 135), mask=stamp)
